@@ -1,0 +1,245 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyOppzWxpATBOh4rCx4SctpG",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Ayhseok0728/colab/blob/main/arttuutle\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 4,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 266
+        },
+        "id": "IfGnt8cgKvay",
+        "outputId": "f0ed0ea9-17e6-4168-baef-4a447d256712"
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "수를 입력하시오 : 저뭇\n"
+          ]
+        },
+        {
+          "output_type": "error",
+          "ename": "ValueError",
+          "evalue": "ignored",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mValueError\u001b[0m                                Traceback (most recent call last)",
+            "\u001b[0;32m<ipython-input-4-86488c89be70>\u001b[0m in \u001b[0;36m<module>\u001b[0;34m\u001b[0m\n\u001b[0;32m----> 1\u001b[0;31m \u001b[0mnum\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mint\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0minput\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m\"수를 입력하시오 : \"\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m      2\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      3\u001b[0m \u001b[0;32mif\u001b[0m \u001b[0mnum\u001b[0m \u001b[0;34m>\u001b[0m \u001b[0;36m100\u001b[0m \u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      4\u001b[0m   \u001b[0;32mif\u001b[0m \u001b[0mnum\u001b[0m \u001b[0;34m<\u001b[0m \u001b[0;36m1000\u001b[0m \u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      5\u001b[0m     \u001b[0mprint\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m\"100보다 크고 1000보다 작군요.\"\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;31mValueError\u001b[0m: invalid literal for int() with base 10: '저뭇'"
+          ]
+        }
+      ],
+      "source": [
+        "num = int(input(\"수를 입력하시오 : \"))\n",
+        "\n",
+        "if num > 100 :\n",
+        "  if num < 1000 : \n",
+        "    print(\"100보다 크고 1000보다 작군요.\")\n",
+        "  else : \n",
+        "    print(\"와~ 1000보다 크군요.\")\n",
+        "else :\n",
+        "  print(\"음~ 100보다 작군요.\")"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "score = int(input(\"점수를 입력하세요.: \"))\n",
+        "\n",
+        "if score >= 90 :\n",
+        "  print(\"A학점입니다.\", end='')\n",
+        "else :\n",
+        "  if score >= 80 :\n",
+        "     print(\"B학점입니다.\",end='')\n",
+        "  else :\n",
+        "    if score >= 70 :\n",
+        "      print(\"C학점입니다. \", end='')\n",
+        "    else :\n",
+        "      if score >= 60 :\n",
+        "        print(\"D학점입니다.\", end='')\n",
+        "      else :\n",
+        "       print(\"F학점입니다.\", end='')\n",
+        "       "
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "bohaeWLANfFi",
+        "outputId": "24884b13-beb7-4aef-dc27-af4660fe3318"
+      },
+      "execution_count": 6,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "점수를 입력하세요.: 90\n",
+            "A학점입니다."
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "score = int(input(\"점수를 입력하세요. :\"))\n",
+        "\n",
+        "if score >= 90 :\n",
+        "  print(\"A\",end='')\n",
+        "elif score >= 80 :\n",
+        "  print(\"B\", end='')\n",
+        "elif score >= 70 :\n",
+        "  print(\"C\", end='')\n",
+        "elif score >= 60 :\n",
+        "  print(\"D\", end='')\n",
+        "else :\n",
+        "  print(\"F\", end='')\n",
+        "  print(\"학점입니다...\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "LD4zqfBRPdPo",
+        "outputId": "84b311ee-ceca-4020-a7d5-22b4d8fa1ce7"
+      },
+      "execution_count": 8,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "점수를 입력하세요. :90\n",
+            "A"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "age = int(input(\"나이를 입력해주세요. : \"))\n",
+        "\n",
+        "if age >= 18 :\n",
+        "  print(\"즐거운 시간 되십시오.~~\")\n",
+        "else :\n",
+        "  print(\"만 19시미만 이용자는 오후 10까지이므로 컴퓨터를 종료시켜주세요\")\n",
+        "\n",
+        "print(\"협조해주셔서 감사합니다.\")"
+      ],
+      "metadata": {
+        "id": "4dE-oS1MQSIr"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import random\n",
+        "\n",
+        "myhand = input(\"나의 가위/바위/보 :\")\n",
+        "comhand = random.choice([\"가위\", \"바위\", \"보\"])\n",
+        "print(\"컴퓨터와 가위/바위/보 :\", comhand)\n",
+        "\n",
+        "if myhand == comhand :\n",
+        "  print(\"비겼습니다.\")\n",
+        "\n",
+        "elif (myhand == \"가위\" and comhand == \"보\") or \\\n",
+        "     (myhand == \"바위\" and comhand == \"가위\") or \\\n",
+        "     (myhand == \"보\" and comhand == \"바위\") :\n",
+        "    print(\"이겼습니다!\")\n",
+        "else :\n",
+        "  print(\"졌습니다...\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "bHv0FsNchLa0",
+        "outputId": "b24a0bae-91ed-49ff-b4c5-7e4cdf62986e"
+      },
+      "execution_count": 18,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "나의 가위/바위/보 :보\n",
+            "컴퓨터와 가위/바위/보 : 보\n",
+            "비겼습니다.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#!pip3 install ColabTurtle\n",
+        "import ColabTurtle.Turtle as turtle\n",
+        "import random\n",
+        "print(turtle.DEFAULT_WINDOW_SIZE)\n",
+        "turtle.initializeTurtle()\n",
+        "count = 1\n",
+        "while count <= 360 :\n",
+        "\n",
+        "while True :\n",
+        "  turtle.left(random.randint(0,360))\n",
+        "  turtle.color((random.randint(0,255), random.randint(0,255),random.randint(0,255)))\n",
+        "  turtle.forward(random.randint(100,200))\n",
+        "  if 800 <= turtle.getx() or turtle.getx() <= 0 or \\\n",
+        "  500 <= turtle.gety() or turtle.gety() <=0:\n",
+        "    turtle.goto(400,250)\n",
+        "  count = count + 1"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 137
+        },
+        "id": "bIlA0y56ifMk",
+        "outputId": "c396ec33-8a99-486b-a6ea-78647bd076e1"
+      },
+      "execution_count": 27,
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "IndentationError",
+          "evalue": "ignored",
+          "traceback": [
+            "\u001b[0;36m  File \u001b[0;32m\"<ipython-input-27-f1dfdbc59756>\"\u001b[0;36m, line \u001b[0;32m9\u001b[0m\n\u001b[0;31m    while True :\u001b[0m\n\u001b[0m        ^\u001b[0m\n\u001b[0;31mIndentationError\u001b[0m\u001b[0;31m:\u001b[0m expected an indented block\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
