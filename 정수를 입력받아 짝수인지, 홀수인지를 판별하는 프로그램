@@ -1,0 +1,59 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyPk60QGN9cKJm1NtKdPIRQ4",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Ayhseok0728/colab/blob/main/%EC%A0%95%EC%88%98%EB%A5%BC%20%EC%9E%85%EB%A0%A5%EB%B0%9B%EC%95%84%20%EC%A7%9D%EC%88%98%EC%9D%B8%EC%A7%80%2C%20%ED%99%80%EC%88%98%EC%9D%B8%EC%A7%80%EB%A5%BC%20%ED%8C%90%EB%B3%84%ED%95%98%EB%8A%94%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 6,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "pPzzMyPi_i37",
+        "outputId": "56b83ebe-7299-4d34-a0b7-1b4cb89c6209"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "숫자를 입력하시오 : 1773\n",
+            "홀수입니다.\n"
+          ]
+        }
+      ],
+      "source": [
+        "num = int(input(\"숫자를 입력하시오 : \"))\n",
+        "\n",
+        "if num%2 == 1 :\n",
+        "  print(\"홀수입니다.\")\n",
+        "else :\n",
+        "  print(\"짝수입니다.\")"
+      ]
+    }
+  ]
+}
