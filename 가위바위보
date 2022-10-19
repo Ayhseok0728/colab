@@ -1,0 +1,177 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyORpMZnsRVUwF9HLROiuMDI",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Ayhseok0728/colab/blob/main/%EA%B0%80%EC%9C%84%EB%B0%94%EC%9C%84%EB%B3%B4\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 6,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "pPzzMyPi_i37",
+        "outputId": "56b83ebe-7299-4d34-a0b7-1b4cb89c6209"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "숫자를 입력하시오 : 1773\n",
+            "홀수입니다.\n"
+          ]
+        }
+      ],
+      "source": [
+        "num = int(input(\"숫자를 입력하시오 : \"))\n",
+        "\n",
+        "if num%2 == 1 :\n",
+        "  print(\"홀수입니다.\")\n",
+        "else :\n",
+        "  print(\"짝수입니다.\")"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "num = int(input(\"값을 입력하시오 : \"))\n",
+        "\n",
+        "if num > 100 :\n",
+        "  if num < 1000 : \n",
+        "    print(\"100보다 크고 1000보다 작군요.\")\n",
+        "  else : \n",
+        "    print(\"와~ 1000보다 크군요.\")\n",
+        "else :\n",
+        "  print(\"음~ 100보다 작군요.\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "CYQXHbNPBM_G",
+        "outputId": "1bdda5be-a59f-4eb7-fb37-d8c17e36fdbf"
+      },
+      "execution_count": 8,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "값을 입력하시오 : 150\n",
+            "100보다 크고 1000보다 작군요.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "score = int(input(\"점수를 입력하세요.: \"))\n",
+        "\n",
+        "if score >= 90 :\n",
+        "  print(\"A학점입니다.\", end='')\n",
+        "else :\n",
+        "  if score >= 80 :\n",
+        "     print(\"B학점입니다.\",end='')\n",
+        "  else :\n",
+        "    if score >= 70 :\n",
+        "      print(\"C학점입니다. \", end='')\n",
+        "    else :\n",
+        "      if score >= 60 :\n",
+        "        print(\"D학점입니다.\", end='')\n",
+        "      else :\n",
+        "       print(\"F학점입니다.\", end='')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "1N0E8nJ3DlMS",
+        "outputId": "07143e61-0eeb-4bbb-e5f9-ed7e7ce95659"
+      },
+      "execution_count": 9,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "점수를 입력하세요.: 77\n",
+            "C학점입니다. "
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import random\n",
+        "\n",
+        "myhand = input(\"나의 가위/바위/보 :\")\n",
+        "comhand = random.choice([\"가위\", \"바위\", \"보\"])\n",
+        "print(\"컴퓨터와 가위/바위/보 :\", comhand)\n",
+        "\n",
+        "if myhand == comhand :\n",
+        "  print(\"비겼습니다.\")\n",
+        "\n",
+        "elif (myhand == \"가위\" and comhand == \"보\") or \\\n",
+        "     (myhand == \"바위\" and comhand == \"가위\") or \\\n",
+        "     (myhand == \"보\" and comhand == \"바위\") :\n",
+        "    print(\"이겼습니다!\")\n",
+        "else :\n",
+        "  print(\"졌습니다...\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "LTkfgteZFMfl",
+        "outputId": "1b5c556c-0ad4-427c-8442-12cb849eaa1b"
+      },
+      "execution_count": 20,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "나의 가위/바위/보 :가위\n",
+            "컴퓨터와 가위/바위/보 : 가위\n",
+            "비겼습니다.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "DCaepUX6FoVe"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
