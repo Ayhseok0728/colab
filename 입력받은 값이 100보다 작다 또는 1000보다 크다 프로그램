@@ -1,0 +1,91 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyM1/uZeD7EGCIFESrA+47op",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Ayhseok0728/colab/blob/main/%EC%9E%85%EB%A0%A5%EB%B0%9B%EC%9D%80%20%EA%B0%92%EC%9D%B4%20100%EB%B3%B4%EB%8B%A4%20%EC%9E%91%EB%8B%A4%20%EB%98%90%EB%8A%94%201000%EB%B3%B4%EB%8B%A4%20%ED%81%AC%EB%8B%A4%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 6,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "pPzzMyPi_i37",
+        "outputId": "56b83ebe-7299-4d34-a0b7-1b4cb89c6209"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "숫자를 입력하시오 : 1773\n",
+            "홀수입니다.\n"
+          ]
+        }
+      ],
+      "source": [
+        "num = int(input(\"숫자를 입력하시오 : \"))\n",
+        "\n",
+        "if num%2 == 1 :\n",
+        "  print(\"홀수입니다.\")\n",
+        "else :\n",
+        "  print(\"짝수입니다.\")"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "num = int(input(\"값을 입력하시오 : \"))\n",
+        "\n",
+        "if num > 100 :\n",
+        "  if num < 1000 : \n",
+        "    print(\"100보다 크고 1000보다 작군요.\")\n",
+        "  else : \n",
+        "    print(\"와~ 1000보다 크군요.\")\n",
+        "else :\n",
+        "  print(\"음~ 100보다 작군요.\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "CYQXHbNPBM_G",
+        "outputId": "1bdda5be-a59f-4eb7-fb37-d8c17e36fdbf"
+      },
+      "execution_count": 8,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "값을 입력하시오 : 150\n",
+            "100보다 크고 1000보다 작군요.\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
